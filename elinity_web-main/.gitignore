@@ -1,0 +1,20 @@
+.env
+dist
+node_modules/
+server/node_modules/
+context/
+.agents/
+gamesV1/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local/backend test files
+backend/test_*.py

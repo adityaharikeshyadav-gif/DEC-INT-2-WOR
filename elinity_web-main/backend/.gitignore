@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python cache
+*.pyc
+*.pyo
+
+# Environments
+.venv/
+venv/
+ENV/
+.env
+
+# Testing & Linting
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs
+*.log
+
+# Local IDE / Agent files
+.agents/
+skills-lock.json
+ui-registry.md
+memory.md
+
+# Generated media
+diag_failed.webm
+
+# macOS
+.DS_Store

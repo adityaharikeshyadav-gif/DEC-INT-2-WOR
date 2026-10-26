@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;500;700&amp;family=Literata:wght@400;500;700&amp;family=Anton:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-error-container":"#93000a","on-tertiary-fixed-variant":"#2c4d40","tertiary":"#416355","on-primary-container":"#fffbff","on-primary-fixed":"#390c00","surface-container-lowest":"#ffffff","error":"#ba1a1a","on-primary-fixed-variant":"#822801","surface-bright":"#fff8f4","surface-container-low":"#fdf2e9","on-surface":"#201b16","inverse-primary":"#ffb59c","on-tertiary":"#ffffff","error-container":"#ffdad6","on-secondary":"#ffffff","on-secondary-container":"#78520e","primary-fixed":"#ffdbcf","inverse-surface":"#352f2a","surface-tint":"#a23e18","primary-fixed-dim":"#ffb59c","secondary":"#7e5713","on-secondary-fixed":"#291800","on-secondary-fixed-variant":"#614000","inverse-on-surface":"#faefe6","on-tertiary-container":"#f5fff8","tertiary-container":"#5a7c6d","tertiary-fixed":"#c6ebd9","outline":"#8a726a","surface-container-highest":"#ebe1d8","on-background":"#201b16","tertiary-fixed-dim":"#aacfbd","outline-variant":"#dec0b7","secondary-fixed":"#ffddb1","primary-container":"#bf542c","surface-container":"#f7ece4","background":"#fff8f4","on-primary":"#ffffff","surface-dim":"#e3d8d0","surface-container-high":"#f1e6de","on-surface-variant":"#57423b","secondary-container":"#fec97b","surface":"#fff8f4","secondary-fixed-dim":"#f2be71","surface-variant":"#ebe1d8","on-tertiary-fixed":"#002116","on-error":"#ffffff","primary":"#9f3c16"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{gutter:"1.5rem","gutter-mobile":"0.75rem","space-sm":"0.5rem","margin-mobile":"1rem",margin:"3rem","space-xl":"2.5rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem"},fontFamily:{"display-lg":["EB Garamond"],"label-lg":["Courier Prime"],"headline-sm":["EB Garamond"],"headline-lg":["EB Garamond"],"body-sm":["Literata"],"label-md":["Courier Prime"],"display-lg-mobile":["EB Garamond"],"body-md":["Literata"],"body-lg":["Literata"],"headline-md":["EB Garamond"],"label-sm":["Courier Prime"]},fontSize:{"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"18px",letterSpacing:"0.06em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"500"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"400"}],"display-lg-mobile":["34px",{lineHeight:"42px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"30px",fontWeight:"400"}],"headline-md":["26px",{lineHeight:"34px",fontWeight:"500"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"400"}]}}}};</script></head><body class="bg-background text-on-surface font-body-md min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 px-space-lg flex items-center gap-space-sm bg-surface-container-high/60"><div class="w-9 h-9 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-display-lg text-headline-sm select-none shadow-[inset_0_1px_2px_rgba(36,31,26,0.2)]">¶</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold leading-none">DECKOVIZ</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-1">Archival Atelier</span></div></div><div class="px-space-lg pt-space-lg pb-space-xs"><span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">ARCHIVAL MODULES</span></div><nav class="flex-1 px-space-md py-space-xs space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-bold"><a class="group flex items-center gap-space-sm px-space-md py-space-sm rounded font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="style-calibration-quiz" href="#"><span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">tune</span><span>Style Calibration Quiz</span></a><a class="group flex items-center gap-space-sm px-space-md py-space-sm rounded font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="curated-art-style" href="#"><span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">auto_stories</span><span>Curated Art Style</span></a><a class="group flex items-center gap-space-sm px-space-md py-space-sm rounded font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="daily-art-style-update" href="#"><span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">newspaper</span><span>Daily Art Style Update</span></a><div class="pt-space-md pb-space-xs px-space-sm"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-bold">FOLIO COMPOSITIONS</span></div><a aria-current="page" class="group flex items-center gap-space-sm px-space-md py-space-sm rounded transition-colors bg-primary-container text-on-primary-container font-bold" data-path="cinematic-drafting-suite" href="#"><span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">movie_filter</span><span>Cinematic Drafting Suite</span></a><a class="group flex items-center gap-space-sm px-space-md py-space-sm rounded font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="illuminated-storyboards" href="#"><span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">filter_frames</span><span>Illuminated Storyboards</span></a></nav><div class="p-space-md m-space-md rounded bg-surface-container-high/80 text-on-surface-variant flex flex-col gap-1"><div class="flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm uppercase font-bold text-on-surface">Steam GPU Array</span></div><span class="font-label-sm text-label-sm text-outline">8x H100 Latents Active</span></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-lg"><div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">DECKOVIZ STUDIO</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed uppercase font-bold">Archival Edition</span></div><div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm"><span class="text-secondary font-semibold">Vol. IV</span><span class="text-outline-variant">•</span><span>The Chronicle Engine</span><span class="text-outline-variant">•</span><span class="italic font-body-sm text-body-sm text-outline">Garamond &amp; Technicolor Latents</span></div></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex flex-col items-end pr-space-md"><div class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">Claude 3.7 Dialectic Engine</span></div><span class="font-label-sm text-label-sm text-outline">Latent Print Ready • 24fps Celluloid</span></div><div class="flex items-center gap-space-xs"><button class="w-9 h-9 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Linotype Type Setting" type="button"><span class="material-symbols-outlined text-[18px]">history_edu</span></button><button class="w-9 h-9 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Atelier Settings" type="button"><span class="material-symbols-outlined text-[18px]">settings</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-20 w-full min-h-screen bg-background"><div class="flex flex-col w-full">
+<div class="p-space-lg max-w-[1720px] mx-auto w-full space-y-space-lg">
+<div class="bg-surface-container-low rounded-xl shadow-md p-space-lg relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md relative z-10">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-space-sm py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase font-bold tracking-widest">Opus Archivum • No. 714</span>
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase font-semibold">Tome IV — Folio 88v</span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              Press Latents Calibrated
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">The Narrative Illumination Forge</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+            Alchemical story projection suite synthesizing hot-metal linotype dramaturgy, Petzval optics, and 24fps hand-inked celluloid plates.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-center">
+<button class="px-space-md py-space-sm rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-2 shadow-sm transition-transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>Manuscript Ledger</span>
+</button>
+<button class="px-space-lg py-space-sm rounded bg-primary-container text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider flex items-center gap-2 shadow-md hover:bg-primary transition-all active:translate-y-0.5" type="button">
+<span class="material-symbols-outlined text-[18px]">ink_pen</span>
+<span>Re-Strike Proof</span>
+</button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<section class="xl:col-span-4 bg-surface-container rounded-xl shadow-md p-space-lg flex flex-col gap-space-md relative">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-widest">[ Codex Scriptoria ]</span>
+<span class="font-label-sm text-label-sm text-outline">Iron Gall Ink • Rag Paper 320gsm</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold block">Section Primer</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium leading-tight">Chapter I: Premise &amp; Dramatic Sparks</h2>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-inner relative flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>¶ LINOTYPE MATRICES: 1,842 LEADS</span>
+<span>STATE: ILLUMINATING</span>
+</div>
+<div class="flex gap-space-sm pt-space-xs">
+<div class="w-12 h-12 rounded bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-display-lg text-headline-lg select-none shrink-0 shadow-sm leading-none">
+              A
+            </div>
+<textarea class="w-full bg-transparent resize-none font-body-md text-body-md text-on-surface focus:outline-none leading-relaxed p-0 selection:bg-secondary-fixed" placeholder="Inscribe your scene prompt..." rows="4">solitary lantern-maker wanders through foggy 19th-century cobble streets as clockwork airships drift across the sepia twilight, their brass propellers churning glowing coal dust over cathedral spires...</textarea>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="italic font-body-sm text-body-sm text-outline">Looming dramatic tension • Pre-mechanical dusk</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-secondary font-bold font-label-sm text-label-sm">188 words</span>
+</div>
+</div>
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">palette</span>
+            Lithographic Aesthetic Presets
+          </label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-high text-on-surface font-body-md text-body-md rounded px-space-md py-space-sm pr-10 focus:outline-none shadow-sm cursor-pointer">
+<option selected="">Antique Lithograph &amp; Victorian Grain v2.4</option>
+<option>Pre-Raphaelite Romanticism &amp; Lapis Glaze</option>
+<option>Early Technicolor 3-Strip 1935 (Hand-Tinted)</option>
+<option>Copperplate Etching &amp; Amber Varnish 1888</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-secondary text-[20px]">expand_more</span>
+</div>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">lock</span>
+              Dramatis Personae Anchors
+            </label>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">3 Latent Medallions Locked</span>
+</div>
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="bg-surface-container-high p-space-sm rounded-lg flex flex-col items-center text-center gap-1 relative group cursor-pointer hover:bg-surface-container-highest transition-colors">
+<div class="w-14 h-14 rounded-full overflow-hidden shadow-sm bg-surface-container-low p-0.5">
+<img class="w-full h-full object-cover rounded-full" data-alt="A vintage oval sepia medallion portrait of an elderly Victorian artisan lantern maker with silver beard, tweed vest, and brass wire spectacles, dramatic Rembrandt warm lighting, photographic grain." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-Tq3-qnVCSiQ3UVwsUjYl2NsyOJRqelQFcOEgV8A6fFmGDSnACs2msXvkVmUjWNmBuAd5k2GreQqTRnc0S-aHUhegogqUhRZfm_40bONMKM3DHIcOGK24baSorRTRLoPUFIqh57M7i3KfSTOhpcDIrXhaBpJcZjW05hglJoP5Maf1b7WplBFX1bJD9E9dRjWyXxg_5rS9ZemwrUe-EnRK5M5N3ktKRGezqSlcFfWRl1oFA9gNwGPU"/>
+</div>
+<span class="font-headline-sm text-body-sm font-bold text-on-surface truncate w-full">Master Silas</span>
+<span class="font-label-sm text-label-sm text-outline">Lanternsmith</span>
+<span class="absolute top-1 right-1 w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-lg flex flex-col items-center text-center gap-1 relative group cursor-pointer hover:bg-surface-container-highest transition-colors">
+<div class="w-14 h-14 rounded-full overflow-hidden shadow-sm bg-surface-container-low p-0.5">
+<img class="w-full h-full object-cover rounded-full" data-alt="A vintage 19th-century daguerreotype portrait of an intrepid young woman navigator in leather aviator coat and bronze filigree ear-piece, antique sepia toning and authentic scratched emulsion." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCp3IjOxnVWYXZbn6BA-AfQs62tZ9OVYpK1OeVtC745EbHYx4Gxx6uHALc8m2CioSIqqfQxU9xYGsJ1bZJ0SS7iHD2ohiCAIIJ4F_6S9BtXYQ0PkZMMWrJ0evc7kJGe9XirYByOFs-wBEMcfYSnSG5uumgdbms8xaSXkcj4arREeXK0vdPnNnSvrGC81UEpnX8iOLHRs0QJNiy09pSn5Wh02bk5H1U3letCsHMLldvmOMJxn8o2vJv"/>
+</div>
+<span class="font-headline-sm text-body-sm font-bold text-on-surface truncate w-full">Clara Vance</span>
+<span class="font-label-sm text-label-sm text-outline">Airship Pilot</span>
+<span class="absolute top-1 right-1 w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-lg flex flex-col items-center text-center gap-1 relative group cursor-pointer hover:bg-surface-container-highest transition-colors">
+<div class="w-14 h-14 rounded-full overflow-hidden shadow-sm bg-surface-container-low p-0.5">
+<img class="w-full h-full object-cover rounded-full" data-alt="Vintage archival cameo medallion illustration of an ornate mechanical brass falcon with luminous amber eyes and clockwork filigree pinions on faded parchment background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrctlIC5y3-KUrJHBjWQuoK2pHP7fQcyIv18ed-XkA7JcJXkWVGEb6w-cTFCJYmeGVyiti1cXzOB5JvqCCBOU4WByDmsp1s9xzF_mAHJK2VwP6lioJOcL29_38r8ls_NNeqiCvN3kYIeRIZ0x1HzYBTtiffMQQK6gjrgXfbeDn33Tv79lke50jb0e4LOhbmarYGKlFrohI3TXs2Mne3z1_tuBODrhVpzwnJayhODKqkW3gR7r5TNRs"/>
+</div>
+<span class="font-headline-sm text-body-sm font-bold text-on-surface truncate w-full">Orion V</span>
+<span class="font-label-sm text-label-sm text-outline">Clock Automaton</span>
+<span class="absolute top-1 right-1 w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+</div>
+</div>
+</div>
+<div class="space-y-space-xs bg-surface-container-high/60 p-space-md rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">graphic_eq</span>
+              Acoustic Orchestrator
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Tri-Track Foley</span>
+</div>
+<div class="space-y-2 pt-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-tertiary">rainy</span>
+                Foley: Cobble Rain &amp; Gusts
+              </span>
+<span class="font-label-sm text-label-sm text-outline">-6.2 dB</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 72%;"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm pt-1">
+<span class="text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">piano</span>
+                Score: Mournful Cello Quartette
+              </span>
+<span class="font-label-sm text-label-sm text-outline">-3.4 dB</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 84%;"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm pt-1">
+<span class="text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-primary">album</span>
+                Texture: Wax Cylinder Crackle
+              </span>
+<span class="font-label-sm text-label-sm text-outline">-11.0 dB</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 48%;"></div>
+</div>
+</div>
+</div>
+<button class="w-full py-space-md rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-headline-sm flex items-center justify-center gap-space-sm shadow-md hover:bg-primary transition-all active:scale-[0.99] group" type="button">
+<span>Illuminate &amp; Render Story Sequence</span>
+<span class="material-symbols-outlined text-[22px] group-hover:rotate-12 transition-transform">auto_awesome</span>
+</button>
+</section>
+<section class="xl:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container rounded-xl shadow-md p-space-md flex flex-col gap-space-sm relative">
+<div class="bg-surface-container-high rounded px-space-md py-space-xs flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 text-secondary font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                LANTERN OPTICS
+              </span>
+<span class="text-outline">•</span>
+<span class="text-on-surface">40mm Petzval Portrait</span>
+</div>
+<div class="flex items-center gap-space-sm text-outline">
+<span>f/2.0 Brass Iris</span>
+<span>•</span>
+<span class="text-primary font-bold">24fps Hand-Cranked</span>
+</div>
+</div>
+<div class="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg bg-inverse-surface group">
+<img class="w-full h-full object-cover" data-alt="A solitary lantern-maker in 19th-century Victorian attire carrying an incandescent brass lantern through foggy cobblestone alleyways, sepia gaslight haze, clockwork airships sailing across an amber dusk sky, authentic celluloid film grain, daguerreotype warmth, cinematic composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8EqJ7gspbu2DOOVq8g1pTJYFEGlo-kMV8XRizRm1o7Ex5t7jQR-dCqoGFfmxNGTOaUrtaVNdSkwRFgw5qqZ85aXxFmDONI1nWhadR91x0uRKL0Ju81-4Un4ZeSHV27D-z-PJJxQzuzpyU-pF2gkcTQNzMyy6XyF4kBF6ix7MMj3e-s7_X54X8ONvqJB9EhOsVmHzF9vU07fdPIDgACvbFk6iHSwkhmUXaKszwj9O3WWflWwjuoAjP"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-transparent to-inverse-surface/40 pointer-events-none"></div>
+<div class="absolute top-space-md left-space-md right-space-md flex items-center justify-between text-on-primary-container pointer-events-none font-label-sm text-label-sm">
+<div class="px-space-sm py-1 rounded bg-inverse-surface/70 backdrop-blur-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">videocam</span>
+<span>ACT I • PLATE 04-B</span>
+</div>
+<div class="px-space-sm py-1 rounded bg-inverse-surface/70 backdrop-blur-sm flex items-center gap-1.5 text-secondary-fixed font-bold">
+<span class="material-symbols-outlined text-[14px]">motion_photos_on</span>
+<span>MATCH DISSOLVE ENGAGED</span>
+</div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-14 h-14 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-xl hover:scale-105 transition-transform" type="button">
+<span class="material-symbols-outlined text-[32px] fill-current">play_arrow</span>
+</button>
+</div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex items-center justify-between text-inverse-on-surface font-label-sm text-label-sm pointer-events-none">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-tint/60">00:08.24 / 00:47.00</span>
+<span>Cohesion: 99.4%</span>
+</div>
+<div class="flex items-center gap-1 text-secondary-fixed">
+<span class="material-symbols-outlined text-[14px]">grain</span>
+<span>Celluloid 35mm Emulsion</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-md flex flex-col gap-space-sm shadow-inner">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant uppercase font-bold tracking-wider">Chronicle Scrub Scale • Hand-Tinted Keyframes</span>
+<span class="text-secondary font-bold font-label-md text-label-md">Plate #198 of 1,128</span>
+</div>
+<div class="relative py-2">
+<div class="w-full bg-surface-container-high h-3 rounded-full relative overflow-hidden">
+<div class="bg-secondary-fixed-dim h-full rounded-full" style="width: 42%;"></div>
+</div>
+<div class="absolute top-1/2 left-[42%] -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-primary shadow-md flex items-center justify-center cursor-pointer">
+<div class="w-2 h-2 rounded-full bg-on-primary"></div>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline pt-1">
+<span>00:00 [Dawn Over Thames]</span>
+<span>00:18 [Airship Dock]</span>
+<span>00:34 [Clocktower]</span>
+<span>00:47 [Finale]</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-sm pt-space-xs">
+<button class="py-space-sm px-space-md rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">brush</span>
+<span>Litho-Brush</span>
+</button>
+<button class="py-space-sm px-space-md rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">draw</span>
+<span>Re-ink Keyframe</span>
+</button>
+<button class="py-space-sm px-space-md rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">blur_on</span>
+<span>Grain Calibrator</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">precision_manufacturing</span>
+</div>
+<div>
+<div class="font-headline-sm text-body-lg font-semibold text-on-surface">Press Latent Synthesis Engine</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Hand-cranked raster matrix • Sub-pixel silver halide dithering</div>
+</div>
+</div>
+<span class="px-space-md py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">
+            Nominal 60 Hz
+          </span>
+</div>
+</section>
+<section class="xl:col-span-3 bg-surface-container rounded-xl shadow-md p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-widest">[ Folio Inspector ]</span>
+<span class="material-symbols-outlined text-[18px] text-outline">verified</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold block">Model Weights</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium leading-tight">Aesthetic Ledger</h2>
+</div>
+<div class="space-y-space-md">
+<div class="bg-surface-container-high/70 p-space-md rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold block">Prompt Fidelity</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">8.8 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/ 10</span></span>
+</div>
+<div class="w-14 h-14 relative flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<circle class="text-surface-container-highest stroke-current" cx="18" cy="18" fill="none" r="15.9155" stroke-width="3"></circle>
+<circle class="text-primary stroke-current" cx="18" cy="18" fill="none" r="15.9155" stroke-dasharray="88, 100" stroke-linecap="round" stroke-width="3"></circle>
+</svg>
+<span class="absolute font-label-sm text-label-sm font-bold text-on-surface">88%</span>
+</div>
+</div>
+<div class="bg-surface-container-high/70 p-space-md rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold block">Grain Density</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">78 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">RMS</span></span>
+</div>
+<div class="w-14 h-14 relative flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<circle class="text-surface-container-highest stroke-current" cx="18" cy="18" fill="none" r="15.9155" stroke-width="3"></circle>
+<circle class="text-secondary stroke-current" cx="18" cy="18" fill="none" r="15.9155" stroke-dasharray="78, 100" stroke-linecap="round" stroke-width="3"></circle>
+</svg>
+<span class="absolute font-label-sm text-label-sm font-bold text-on-surface">78%</span>
+</div>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider block">
+              Character Permanence Cameos
+            </span>
+<div class="space-y-space-xs">
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-display-lg text-body-sm font-bold">
+                    S
+                  </div>
+<div>
+<span class="font-body-sm text-body-sm font-bold text-on-surface block">Silas — Lanternmaker</span>
+<span class="font-label-sm text-label-sm text-outline">Anchor Drift: 0.02</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+                  SEALED
+                </span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-display-lg text-body-sm font-bold">
+                    C
+                  </div>
+<div>
+<span class="font-body-sm text-body-sm font-bold text-on-surface block">Clara — Aviator</span>
+<span class="font-label-sm text-label-sm text-outline">Anchor Drift: 0.04</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+                  SEALED
+                </span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-display-lg text-body-sm font-bold">
+                    O
+                  </div>
+<div>
+<span class="font-body-sm text-body-sm font-bold text-on-surface block">Orion — Automaton</span>
+<span class="font-label-sm text-label-sm text-outline">Anchor Drift: 0.01</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+                  SEALED
+                </span>
+</div>
+</div>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider block">
+              Archival Proof Badges
+            </span>
+<div class="flex flex-wrap gap-1.5 font-label-sm text-label-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-secondary font-bold">[ 35mm Nitrate ]</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-tertiary font-bold">[ Damp Rag 320g ]</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-bold">[ 432Hz Pitch ]</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">[ Gaslight LUT ]</span>
+</div>
+</div>
+<div class="bg-secondary-fixed/40 p-space-sm rounded-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">workspace_premium</span>
+<p class="font-body-sm text-body-sm text-on-secondary-fixed">
+              Certificate of Linotype Authenticity verified for Chapter Reel 01-04.
+            </p>
+</div>
+</div>
+</section>
+</div>
+<section class="bg-surface-container rounded-xl shadow-md p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-widest block">[ Folio Sequence Roll ]</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium leading-tight">Multi-Scene Chapter Vignettes</h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-outline">Total Runtime: 47 Seconds • 4 Chapters</span>
+<button class="px-space-md py-space-xs rounded bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" type="button">
+            Append Chapter +
+          </button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-bold">Chapter 01</span>
+<span class="text-tertiary font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              Ready • 12s
+            </span>
+</div>
+<div class="aspect-video w-full rounded overflow-hidden bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="An atmospheric Victorian Thames wharf scene at dawn, wooden piers covered in cold river mist, vintage iron gas lamps casting golden amber reflection on wet dark cobblestones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB26ubGh80agei6Ti2hcnlEx365ul2VlZqB4LWMTigN-QDFycbyENqa0Dr5KTcH0XTKYRAeWjX7D0c9gyIZgkQGWSoQEF8cRT1Gw-GEmU-DTMxL97fhozZMnj9I-0SMRp-N_qNT6nNOv1H1ATkH45fUPTf8-YdHNZb1mDwxhocpD8x1kmv3n0RrvNcV_VYOsVmcETXenvBhAJ2YtTpAh0lV91cb37Obg0dwV1vMsA2lLyQ_qmTYjQf2"/>
+<div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm">
+              Match Dissolve
+            </div>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">The Lantern Wharf</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">Silas lights his primary carbide lantern while morning tide laps the rotting pilings.</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Transitions: 24fr</span>
+<span class="text-secondary font-bold">Proof Ready</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-md flex flex-col gap-space-sm relative ring-2 ring-primary">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-bold">Chapter 02</span>
+<span class="text-primary font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+              Active Slate • 14s
+            </span>
+</div>
+<div class="aspect-video w-full rounded overflow-hidden bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="Intricate Victorian steampunk clockwork astronomical observatory interior, giant brass astrolabes and gearwork wheels, sunlight beaming through arched stained glass windows in dust-filled amber atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFsZ9kHrJNloirnpV4WffGhEqxDBJnD39Bt4uaR8WDWa4YZcJeLVMWVRSXdUnKTlXX6-e3sR5T3Jl4YYY95KiCXtdZ3c5vQREjMOp6_rLkDTgknHpARcPC15hCB4lSapz7d_Rx-wAszZdgVFimTLOaOkquXQeP73pRW1e4U5WlmgokLGyOWP8D0epaOHCxOmW2K8lXPKLuDM6Hx-VgXpHn6MzLs9FAIz4-jIN77VqkSB3pAtCWNy2p"/>
+<div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm">
+              Pan &amp; Drift
+            </div>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Clockwork Observatory</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">Clara aligns the bronze celestial gears as steam vents through the glass dome.</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Camera: Arc 12°</span>
+<span class="text-primary font-bold">In Viewport</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-bold">Chapter 03</span>
+<span class="text-tertiary font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              Ready • 11s
+            </span>
+</div>
+<div class="aspect-video w-full rounded overflow-hidden bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="A colossal Victorian rigid airship with copper riveted hull and glowing portholes parting dense amber clouds over shadowy city spires, hand-tinted retro cinematic film aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFu3bn8LNHoQwL2tI0W-BgRq2sl7SW1IpMPxAevANQpHIQk5aGX4Fc9LtrtCDygNi2jl2GBxUhCV4_QyzSfhHPtJBj9DOMVSL96zDdSGbhYOVrm54Sp7_3nTaDoY5QlNaWGr8T9pLnbtujFPQpO4UDrKzynLsIBCFFP3Vrrj4S73yiwthiY5Ld1V_7BeFpcMD6S-e6i9OrzUYq5fYQyMVNuzPJ_CEUYZb5BVQnbbcQLAirDINnsJjY"/>
+<div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm">
+              Crossfade
+            </div>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Airship in Amber Fog</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">The dirigible Leviathan emerges through smog clouds, signalling with amber torches.</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Foley: Wind &amp; Propellers</span>
+<span class="text-secondary font-bold">Proof Ready</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">Chapter 04</span>
+<span class="text-secondary font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+              Inking: 74% • 10s
+            </span>
+</div>
+<div class="aspect-video w-full rounded overflow-hidden bg-surface-container-high relative flex items-center justify-center">
+<img class="w-full h-full object-cover opacity-80" data-alt="Hand-drawn Victorian pen and ink sketch with warm sepia wash of an artisan clockmaker workshop with hearth fire casting long shadows across workbenches and clocks." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFRxKIp9-lnuif9kF2DEoCksb71iDVn4XF3zWsprHzLv16G0E7bqtrxIjvY74oX-LVvaP4blyoJxIaYkCT9beOFFqzKYRO1Cd-P600q9mO7-OO__5hb5XBJ9PLt_xt2w_A9zfwlFUcDCI1vYNmNjk9ZW0LwVieO4DJQPKp5DoFGLUb_chXf_JXTtz0zjeBHIaIpE0q7JmrAAWHsJTSrwxh6WMgwfCaqxRVZMMRCUC4ze-YXqX9oH2p"/>
+<div class="absolute inset-0 bg-surface-container-highest/50 flex flex-col items-center justify-center p-space-sm text-center">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Hand-drawn ink render in progress</span>
+<div class="w-3/4 bg-surface-container h-1.5 rounded-full overflow-hidden mt-2">
+<div class="bg-primary h-full rounded-full" style="width: 74%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-outline mt-1">Plate 240 / 324</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">The Clockmaker's Hearth</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">Final dramatic convergence as the mechanical heart strikes midnight in the workshop.</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>ETA: 14s</span>
+<span class="text-primary font-bold">Linotype Engraving</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-inner flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant uppercase font-bold tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">music_note</span>
+            Antique Sheet Music Score • Synchronized Audio Ribbon
+          </span>
+<span class="text-outline font-semibold">Tempo: Andante Maestoso (68 BPM) • D Minor</span>
+</div>
+<div class="w-full h-12 bg-surface-container-high/40 rounded flex items-center px-space-md relative overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-around opacity-30 pointer-events-none">
+<span class="font-display-lg text-headline-md text-on-surface font-serif">&amp;</span>
+<span class="font-display-lg text-headline-md text-on-surface font-serif">♭</span>
+<span class="font-display-lg text-headline-md text-on-surface font-serif">♯</span>
+<span class="font-display-lg text-headline-md text-on-surface font-serif">¶</span>
+<span class="font-display-lg text-headline-md text-on-surface font-serif">§</span>
+</div>
+<svg class="w-full h-8 text-secondary/70" preserveaspectratio="none" viewbox="0 0 1000 32">
+<path d="M0,16 Q20,4 40,16 T80,16 T120,6 T160,26 T200,16 T240,10 T280,22 T320,16 T360,2 T400,28 T440,16 T480,8 T520,24 T560,16 T600,4 T640,28 T680,16 T720,12 T760,20 T800,16 T840,6 T880,26 T920,16 T960,10 T1000,16" fill="none" stroke="currentColor" stroke-width="2"></path>
+</svg>
+<div class="absolute top-0 bottom-0 left-[38%] w-0.5 bg-primary shadow-sm"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline pt-1">
+<span>Bar 01: Adagio Introduzione</span>
+<span>Bar 16: Crescendo Bell Chimes</span>
+<span>Bar 32: Grand Steam Tutti</span>
+<span>Bar 48: Submerged Cello Fade</span>
+</div>
+</div>
+</section>
+</div>
+</div></main></div></body></html>

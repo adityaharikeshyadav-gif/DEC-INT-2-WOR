@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;500;700&amp;family=Literata:wght@400;500;700&amp;family=Anton:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-error-container":"#93000a","on-tertiary-fixed-variant":"#2c4d40","tertiary":"#416355","on-primary-container":"#fffbff","on-primary-fixed":"#2e0854","surface-container-lowest":"#ffffff","error":"#ba1a1a","on-primary-fixed-variant":"#4c1d95","surface-bright":"#faf5ff","surface-container-low":"#f7f2fb","on-surface":"#1e1b2e","inverse-primary":"#c4b5fd","on-tertiary":"#ffffff","error-container":"#ffdad6","on-secondary":"#ffffff","on-secondary-container":"#3b0764","primary-fixed":"#ede9fe","inverse-surface":"#2e2a38","surface-tint":"#7c3aed","primary-fixed-dim":"#c4b5fd","secondary":"#8b5cf6","on-secondary-fixed":"#2e1065","on-secondary-fixed-variant":"#4c1d95","inverse-on-surface":"#f5f3ff","on-tertiary-container":"#f5fff8","tertiary-container":"#5a7c6d","tertiary-fixed":"#c6ebd9","outline":"#8b7ea5","surface-container-highest":"#e9def2","on-background":"#1e1b2e","tertiary-fixed-dim":"#aacfbd","outline-variant":"#dcd3e8","secondary-fixed":"#f3e8ff","primary-container":"#6d28d9","surface-container":"#f3ebf9","background":"#faf7fd","on-primary":"#ffffff","surface-dim":"#ece3f5","surface-container-high":"#efe4f6","on-surface-variant":"#504364","secondary-container":"#ddd6fe","surface":"#faf7fd","secondary-fixed-dim":"#d8b4fe","surface-variant":"#ebe1d8","on-tertiary-fixed":"#002116","on-error":"#ffffff","primary":"#7c3aed"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{gutter:"1.5rem","gutter-mobile":"0.75rem","space-sm":"0.5rem","margin-mobile":"1rem",margin:"3rem","space-xl":"2.5rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem"},fontFamily:{"display-lg":["EB Garamond"],"label-lg":["Courier Prime"],"headline-sm":["EB Garamond"],"headline-lg":["EB Garamond"],"body-sm":["Literata"],"label-md":["Courier Prime"],"display-lg-mobile":["EB Garamond"],"body-md":["Literata"],"body-lg":["Literata"],"headline-md":["EB Garamond"],"label-sm":["Courier Prime"]},fontSize:{"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"18px",letterSpacing:"0.06em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"500"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"400"}],"display-lg-mobile":["34px",{lineHeight:"42px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"30px",fontWeight:"400"}],"headline-md":["26px",{lineHeight:"34px",fontWeight:"500"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"400"}]}}}};</script></head><body class="bg-background text-on-surface font-body-md min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 px-space-lg flex items-center gap-space-sm bg-surface-container-high/60"><img src="/logo.jpeg" alt="Deckoviz Logo" class="w-9 h-9 rounded-full object-cover shadow-[0_2px_10px_rgba(124,58,237,0.4)] border border-purple-400/40" /><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold leading-none">DECKOVIZ</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-1">Archival Atelier</span></div></div><div class="px-space-lg pt-space-lg pb-space-xs"><span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">ARCHIVAL MODULES</span></div><nav class="flex-1 px-space-md py-space-xs space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-bold"><a class="group flex items-center gap-space-sm px-space-md py-space-sm rounded font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="style-calibration-quiz" href="/style-calibration-quiz"><span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">tune</span><span>Style Calibration Quiz</span></a><a aria-current="page" class="group flex items-center gap-space-sm px-space-md py-space-sm rounded transition-colors bg-primary-container text-on-primary-container font-bold" data-path="curated-art-style" href="/curated-art-style"><span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">auto_stories</span><span>Curated Art Style</span></a><a class="group flex items-center gap-space-sm px-space-md py-space-sm rounded font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="daily-art-style-update" href="/daily-art-style-update"><span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">newspaper</span><span>Daily Art Style Update</span></a><div class="pt-space-md pb-space-xs px-space-sm"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-bold">FOLIO COMPOSITIONS</span></div><a class="group flex items-center gap-space-sm px-space-md py-space-sm rounded font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="cinematic-drafting-suite" href="/story-studio"><span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">movie_filter</span><span>Cinematic Drafting Suite</span></a><a class="group flex items-center gap-space-sm px-space-md py-space-sm rounded font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="illuminated-storyboards" href="/story-studio"><span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">filter_frames</span><span>Illuminated Storyboards</span></a></nav><div class="p-space-md m-space-md rounded bg-surface-container-high/80 text-on-surface-variant flex flex-col gap-1"><div class="flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm uppercase font-bold text-on-surface">Steam GPU Array</span></div><span class="font-label-sm text-label-sm text-outline">8x H100 Latents Active</span></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-lg"><div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">DECKOVIZ STUDIO</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed uppercase font-bold">Archival Edition</span></div><div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm"><span class="text-secondary font-semibold">Vol. IV</span><span class="text-outline-variant">•</span><span>The Chronicle Engine</span><span class="text-outline-variant">•</span><span class="italic font-body-sm text-body-sm text-outline">Garamond &amp; Technicolor Latents</span></div></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex flex-col items-end pr-space-md"><div class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">Claude 3.7 Dialectic Engine</span></div><span class="font-label-sm text-label-sm text-outline">Latent Print Ready • 24fps Celluloid</span></div><div class="flex items-center gap-space-xs"><button class="w-9 h-9 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Linotype Type Setting" type="button"><span class="material-symbols-outlined text-[18px]">history_edu</span></button><button class="w-9 h-9 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Atelier Settings" type="button"><span class="material-symbols-outlined text-[18px]">settings</span></button><img src="/logo.jpeg" alt="Deckoviz" class="w-8 h-8 rounded-full object-cover shadow-sm border border-purple-400/40 ml-1" /></div></div></header><main class="relative pt-20 w-full min-h-screen bg-background"><div class="flex flex-col w-full">
+<div class="px-space-gutter py-space-xl max-w-7xl mx-auto w-full space-y-space-xl">
+<section class="relative bg-surface-container rounded-xl p-space-xl shadow-md overflow-hidden">
+<div class="absolute -right-12 -top-12 w-64 h-64 rounded-full bg-secondary-fixed/20 pointer-events-none blur-2xl"></div>
+<div class="absolute left-1/3 -bottom-16 w-80 h-80 rounded-full bg-primary-fixed/25 pointer-events-none blur-3xl"></div>
+<div class="relative z-10 flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-3xl">
+<div class="flex flex-wrap items-center gap-space-sm text-secondary font-label-sm text-label-sm uppercase tracking-widest font-bold">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed shadow-sm">CALIBRATION PROTOCOL #0849</span>
+<span>•</span>
+<span class="text-tertiary">Aesthetic Alignment: 98.8%</span>
+<span>•</span>
+<span class="text-primary font-semibold">Archival LoRA Recipe Ready</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight leading-snug">
+            Your Calibrated Aesthetic Folio: <span class="italic font-display-lg text-primary">Victorian Woodcut Noir &amp; Lithographic Chiaroscuro</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Synthesized via Claude 3.7 Dialectic Engine: an interplay of dense 19th-century cross-hatched engraving lines, unbleached laid rag tooth, intaglio ink pooling, and warm hand-held amber lantern bloom calibrated for high-continuity animation plates.
+          </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm w-full xl:w-auto xl:justify-end">
+<a href="/story-studio" class="inline-block"><button class="group flex items-center justify-center gap-2 px-space-md py-3 rounded bg-primary text-on-primary font-label-lg text-label-lg tracking-wider uppercase shadow-md hover:bg-primary-container transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed group-hover:rotate-12 transition-transform">bookmark_add</span>
+<span>Bind to Story Studio Now</span>
+</button></a>
+<button class="flex items-center justify-center gap-2 px-space-md py-3 rounded bg-surface-container-highest text-on-surface hover:bg-surface-dim font-label-lg text-label-lg tracking-wider uppercase shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">file_download</span>
+<span>Export .safetensors Folio</span>
+</button>
+<a href="/style-calibration-quiz" class="inline-block"><button class="flex items-center justify-center gap-2 px-space-md py-3 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm tracking-widest uppercase transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Re-open Calibration Quiz</span>
+</button></a>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<section class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">tune</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Latent Folio Matrix &amp; DNA</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase">[ Barometric Vernier Caliper ]</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="p-space-md rounded bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant">Ink Black-Point</span>
+<span class="font-label-lg text-label-lg font-bold text-primary">94%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded overflow-hidden">
+<div class="bg-primary h-full rounded" style="width: 94%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-2 italic">Deep lampblack saturation &amp; intaglio bite</span>
+</div>
+<div class="p-space-md rounded bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant">Paper Texture Granularity</span>
+<span class="font-label-lg text-label-lg font-bold text-secondary">82%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded overflow-hidden">
+<div class="bg-secondary h-full rounded" style="width: 82%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-2 italic">Laid rag watermarked tooth &amp; deckle edge</span>
+</div>
+<div class="p-space-md rounded bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant">Amber Lantern Bloom</span>
+<span class="font-label-lg text-label-lg font-bold text-secondary">78%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded overflow-hidden">
+<div class="bg-secondary-fixed-dim h-full rounded" style="width: 78%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-2 italic">Diffused whale-oil &amp; kerosene radiance</span>
+</div>
+<div class="p-space-md rounded bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant">Hand-Cranked Shutter Blur</span>
+<span class="font-label-lg text-label-lg font-bold text-tertiary">62%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded overflow-hidden">
+<div class="bg-tertiary h-full rounded" style="width: 62%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-2 italic">16-18fps eccentric rotary celluloid drift</span>
+</div>
+</div>
+<div class="p-space-md rounded bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]">filter_vintage</span>
+<div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface">Chromatic Desaturation</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Heavy sepia bias with burnt umber undertones</p>
+</div>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-primary px-3 py-1 rounded bg-surface-container-highest">-24% SEPIA</span>
+</div>
+<div class="p-space-lg rounded bg-surface-container-high/60 shadow-inner relative mt-space-md">
+<div class="flex items-center gap-2 mb-2 text-secondary">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Master System Inscription (Claude 3.7 Synthesis)</span>
+</div>
+<blockquote class="font-body-md text-body-md text-on-surface italic pl-space-sm leading-relaxed">
+            “Render every shot as a meticulously inked wood engraving plate pulled on damp Somerset vellum. Preserve severe chiaroscuro; shadows must carry the rhythmic texture of crosshatch grooves, while lantern sources cast a warm golden amber falloff. Avoid clean vector geometry. Treat character silhouettes with hand-cut cameo precision.”
+          </blockquote>
+<div class="mt-space-sm flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Latent Prompt Anchor #CL-8921-WOODCUT</span>
+<span class="text-tertiary font-bold">[ VERIFIED BY DIALECTIC COMPILER ]</span>
+</div>
+</div>
+</section>
+<section class="lg:col-span-5 bg-surface-container-low rounded-xl p-space-lg shadow-sm space-y-space-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">developer_board</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Model Architecture</h2>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold">Synchronized</span>
+</div>
+<div class="space-y-space-sm mt-space-sm">
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-display-lg text-headline-sm select-none">
+                I
+              </div>
+<div class="flex-1 min-w-0">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold">Base Checkpoint</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">LithoKinetics-v4-Archival</h3>
+<span class="font-label-sm text-label-sm text-outline">3.5B Param • FP16 Celluloid Native</span>
+</div>
+</div>
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-display-lg text-headline-sm select-none">
+                II
+              </div>
+<div class="flex-1 min-w-0">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold">Primary Style LoRA</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">WoodcutNoir-Litho-v2</h3>
+<span class="font-label-sm text-label-sm text-outline">Weight 0.84 • Rank 64 • Alpha 32</span>
+</div>
+</div>
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-display-lg text-headline-sm select-none">
+                III
+              </div>
+<div class="flex-1 min-w-0">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold">Character Anchor Model</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">CameoProfile-Lock-Pro</h3>
+<span class="font-label-sm text-label-sm text-outline">Wax-sealed identity continuity across 12 acts</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<div class="p-space-md rounded bg-surface-container-highest shadow-sm">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant block mb-2">Letterpress Telemetry</span>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-bold">0.98s</span>
+<span class="font-label-sm text-label-sm text-outline uppercase">Per Plate Render</span>
+</div>
+<div class="h-8 w-px bg-outline-variant"></div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-tertiary font-bold">99.4%</span>
+<span class="font-label-sm text-label-sm text-outline uppercase">Cross-Scene Cohesion</span>
+</div>
+<div class="h-8 w-px bg-outline-variant"></div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-secondary font-bold">24fps</span>
+<span class="font-label-sm text-label-sm text-outline uppercase">Litho Cadence</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<section class="space-y-space-md">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 pb-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Folio Plates</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Curated Scene Vignettes for Animated Stories</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase">4 Authenticated Plates Available</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="relative w-full h-56 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A vintage Victorian woodcut print showing a lone figure holding a glowing kerosene lantern walking down wet, reflective cobblestone streets in a fog-shrouded 19th-century alley. Intense cross-hatching, deep black printer ink, warm amber lantern glow illuminating aged laid rag paper texture, highly detailed lithographic illustration in chiaroscuro lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg3JGErW6fqR0k-uurGPgdmItj4UCKDozVIFXYhloH8uN8wYKbXL97jNiwpdQTZ_tnc-PTMRLnrafJpgu30yICqmisIB-7Dy3QbEgFw06WCvpuvJO4uQ66iIlN5fkLUmLHJfxW9JBrzi0Wel0X6jUtXxSsXS3GEE6ZneCIzezi1QKF95BYl_C_rxsIswnBgONf4kmE0duHsgqDojM1AZCfmQvhBhdg-ae4_eTgkTlR51GhHf-wmbK3"/>
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface-container-lowest/90 font-label-sm text-label-sm font-bold text-on-surface shadow">
+                99.4% MATCH
+              </div>
+<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-surface-container-highest/90 font-label-sm text-label-sm text-on-surface-variant font-bold">
+                PETZVAL 50MM • F/1.4
+              </div>
+</div>
+<div class="p-space-md space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold">Plate No. 01</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">The Lantern-Lit Cobblestones</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Heavy mist clinging to gaslamp posts, rain puddles reflecting warm tungsten sparks, crosshatched stonework.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0">
+<button class="w-full py-2 px-space-sm rounded bg-surface-container-high hover:bg-primary hover:text-on-primary font-label-sm text-label-sm uppercase font-bold tracking-wider text-on-surface transition-colors flex items-center justify-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Inscribe as Chapter 01 Reference</span>
+</button>
+</div>
+</article>
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="relative w-full h-56 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An ornate alchemist's midnight library rendered in an exquisite antique copperplate engraving style. Floor to ceiling towering oak shelves overflowing with leather folios and parchment scrolls, an astrolabe and brass magnifying lens resting on a carved walnut table under moonlight and a flickering candle, unbleached warm sepia tones, intricate line-drawn chiaroscuro shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL_iXXA1LV2Rwan8TT1neL7VlZ-QOiKZn56yaX7JIdO9fAOeX02gOT0rMBgxNoFsdCoJUeCgrBV8ejKWe0Z3q0i9e6f8rM407MctibLVkSZuraGCDOWJOPLbkqBiS8NpyjFybQ3PhUXhfJoKfw89-MikZuHZG38LmO1sj_ePru1qIUMtkGfLLzudtUKleUHIv7DDE5V9TW2GmINh8H2dq7FVx6yUeZFMv2gq8JdmceTZVLFGCJLNKd"/>
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface-container-lowest/90 font-label-sm text-label-sm font-bold text-on-surface shadow">
+                98.7% MATCH
+              </div>
+<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-surface-container-highest/90 font-label-sm text-label-sm text-on-surface-variant font-bold">
+                35MM DAGUERREOTYPE
+              </div>
+</div>
+<div class="p-space-md space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold">Plate No. 02</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Alchemist's Library at Midnight</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Leather folios, brass armillary spheres, and moth wings suspended in hand-poured tallow candle glare.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0">
+<button class="w-full py-2 px-space-sm rounded bg-surface-container-high hover:bg-primary hover:text-on-primary font-label-sm text-label-sm uppercase font-bold tracking-wider text-on-surface transition-colors flex items-center justify-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Inscribe as Chapter 01 Reference</span>
+</button>
+</div>
+</article>
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="relative w-full h-56 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An ornate Victorian steam carriage crossing barren desolate Scottish moors at twilight, depicted in hand-tinted lithographic bookplate aesthetic. Dense black smoke billowing in rhythmic woodcut curls into an amber evening sky, glowing boiler firebox, spoked iron wheels churning peat, aged parchment paper tooth, dramatic silhouette composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7W1WMX22vOp7VcGwn55WAHwqA-BmwzLEq8TW5dt-ojAULN5FnXGFjZ2a_AS0rzWbxMmrNXaSsG47hMaXzdjHA4MctA882waY00ANcnAaKoled-wW5nx1yGIpYuX7IpmHsKu5sWbgpwHcBfTld5Xe5q90Tyg033Nfa7mE5yd-1NwpecYfN-r-TcOegWGoLDnHviIsCDQIAQTc9nCZ4F--8UW9ppggOQgjoIaw9s_EaziW-SG10Oj8l"/>
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface-container-lowest/90 font-label-sm text-label-sm font-bold text-on-surface shadow">
+                97.9% MATCH
+              </div>
+<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-surface-container-highest/90 font-label-sm text-label-sm text-on-surface-variant font-bold">
+                ANAMORPHIC COPPERPLATE
+              </div>
+</div>
+<div class="p-space-md space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold">Plate No. 03</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Steam Carriage Across the Moors</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Boiler embers glowing against windswept heather, copperplate billows of sooty smoke, dark locomotive frame.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0">
+<button class="w-full py-2 px-space-sm rounded bg-surface-container-high hover:bg-primary hover:text-on-primary font-label-sm text-label-sm uppercase font-bold tracking-wider text-on-surface transition-colors flex items-center justify-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Inscribe as Chapter 01 Reference</span>
+</button>
+</div>
+</article>
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="relative w-full h-56 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Intricate clockwork mechanical ornithopters nesting inside an arched Victorian conservatory glass hangar, illustrated as a rare antique hand-tinted lithograph. Clockwork gears, brass articulated wings with stretched linen canvas, soaring vaulted iron struts, golden dust motes caught in sunbeams, fine archival engraving line work." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVN_WG3I8QbqWLquR2x0oFZM6IiFRLlMUjv3TsU4KQAsStLBBME1Ga_qKYnVhGYhTbgDsgcUe9PvxFzGxPdQxYTWmeei-Y8lpEVBC7bSmRl-80-KvF-oLh8Qk5ecmbRHhOJP8a3o6Qmk97tNnvFr7BZZg9hsVj6EFOb6Kx9-7msCCNEGbd6M0KZ4aT8u7TYbrvqn7x_yR5Phol-aglR1eFDIUxYDClounZHvRJPlbwSaK2J5U1ixxf"/>
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface-container-lowest/90 font-label-sm text-label-sm font-bold text-on-surface shadow">
+                99.2% MATCH
+              </div>
+<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-surface-container-highest/90 font-label-sm text-label-sm text-on-surface-variant font-bold">
+                HAND-TINTED LITHOGRAPH
+              </div>
+</div>
+<div class="p-space-md space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold">Plate No. 04</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Clockwork Ornithopter Haven</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Silk-and-ash wood ribbing, gear-trains turning under vaulted botanical ironwork, diffused amber sunrays.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0">
+<button class="w-full py-2 px-space-sm rounded bg-surface-container-high hover:bg-primary hover:text-on-primary font-label-sm text-label-sm uppercase font-bold tracking-wider text-on-surface transition-colors flex items-center justify-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Inscribe as Chapter 01 Reference</span>
+</button>
+</div>
+</article>
+</div>
+</section>
+<section class="space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Literary Blueprints</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Ready-to-Animate Story Premises</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase">Formulated for 24fps Latent Reel</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="p-space-lg rounded-xl bg-surface-container shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-display-lg text-display-lg text-secondary-fixed-dim select-none leading-none">I</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant uppercase font-bold">Chronometer Drama</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">The Chronometer of St. Jude</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              When London's central municipal clockwork begins running seven seconds backward each sunset, an exiled horologist and an orphan typesetter discover secret messages punched into the brass escapement wheels by an unseen artisan.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold">3 Scenes • 48 Plates</span>
+<a class="font-label-sm text-label-sm uppercase font-bold text-primary group-hover:translate-x-1 transition-transform inline-flex items-center gap-1" href="#">
+<span>Draft Act</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-display-lg text-display-lg text-secondary-fixed-dim select-none leading-none">II</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant uppercase font-bold">Aeronautic Mystery</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Letters from the Amber Airship</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              A luxury zeppelin navigates perpetual electrical storms over the North Atlantic. In the smoking salon, passengers receive handwritten letters from their future selves delivered via miniature pneumatic brass tubes.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold">5 Scenes • 80 Plates</span>
+<a class="font-label-sm text-label-sm uppercase font-bold text-primary group-hover:translate-x-1 transition-transform inline-flex items-center gap-1" href="#">
+<span>Draft Act</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-display-lg text-display-lg text-secondary-fixed-dim select-none leading-none">III</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant uppercase font-bold">Automaton Gothic</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">The Scriptorium Automaton</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Inside an abandoned Benedictine abbey, an iron monk automaton built in 1842 continues to transcribe lost apocrypha using squid ink and gold leaf, refusing to cease its tireless transcription until the abbey bells chime once more.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold">4 Scenes • 64 Plates</span>
+<a class="font-label-sm text-label-sm uppercase font-bold text-primary group-hover:translate-x-1 transition-transform inline-flex items-center gap-1" href="#">
+<span>Draft Act</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<div class="sticky bottom-6 z-30 p-space-md bg-surface-container-highest/95 backdrop-blur-md rounded-xl shadow-xl flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">auto_stories</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Master Style Binding Ready</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Victorian Woodcut Noir • Seed Set #4991204</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="px-space-md py-2.5 rounded bg-surface-container text-on-surface hover:bg-surface-container-low font-label-sm text-label-sm uppercase font-bold tracking-wider transition-colors shadow-sm" type="button">
+          Save to Master Library
+        </button>
+<button class="px-space-md py-2.5 rounded bg-surface-container text-on-surface hover:bg-surface-container-low font-label-sm text-label-sm uppercase font-bold tracking-wider transition-colors shadow-sm flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Print Style DNA Folio</span>
+</button>
+<button class="px-space-lg py-2.5 rounded bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg uppercase tracking-wider font-bold transition-all shadow-md active:scale-95 flex items-center gap-1" type="button">
+<span>Proceed to Story Studio</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div>
+<!-- ================= DECKOVIZ CHATBOT PIPELINE WIDGET ================= -->
+<div id="deckoviz-chatbot-root" class="fixed bottom-6 right-6 z-50 font-sans">
+  <!-- Trigger Button -->
+  <button id="deckoviz-chat-toggle" class="relative group flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-tr from-purple-700 via-indigo-600 to-violet-500 text-white shadow-[0_8px_28px_rgba(124,58,237,0.45)] hover:shadow-[0_12px_36px_rgba(124,58,237,0.6)] hover:scale-105 active:scale-95 transition-all duration-300 border-2 border-purple-300/40">
+    <span class="absolute -top-1 -right-1 flex h-3.5 w-3.5">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-400 opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-violet-500 border-2 border-[#121316]"></span>
+    </span>
+    <img src="/logo.jpeg" alt="Vizzy AI" class="w-8 h-8 rounded-full object-cover shadow-sm pointer-events-none group-hover:rotate-12 transition-transform duration-300" />
+    <span class="sr-only">Open Deckoviz Chatbot</span>
+  </button>
+
+  <!-- Chat Drawer / Modal Window -->
+  <div id="deckoviz-chat-window" class="hidden absolute bottom-16 right-0 w-[410px] max-w-[calc(100vw-2rem)] h-[580px] max-h-[82vh] bg-[#0f0e17]/95 backdrop-blur-2xl border border-purple-500/25 rounded-2xl shadow-[0_24px_64px_rgba(0,0,0,0.7),0_0_32px_rgba(124,58,237,0.2)] flex flex-col overflow-hidden transition-all duration-300 animate-in fade-in slide-in-from-bottom-4">
+    <!-- Header -->
+    <div class="px-5 py-3.5 bg-gradient-to-r from-purple-950/80 via-[#18122c]/90 to-indigo-950/80 border-b border-purple-500/20 flex items-center justify-between flex-shrink-0">
+      <div class="flex items-center gap-3">
+        <div class="relative">
+          <img src="/logo.jpeg" alt="Deckoviz Curator" class="w-9 h-9 rounded-full object-cover border border-purple-400/50 shadow-md" />
+          <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-400 ring-2 ring-[#0f0e17]"></span>
+        </div>
+        <div>
+          <div class="flex items-center gap-1.5">
+            <h3 class="font-bold text-sm text-purple-100 tracking-tight">Vizzy &amp; Lumi</h3>
+            <span class="text-[9px] px-1.5 py-0.2 rounded bg-purple-500/20 border border-purple-500/30 text-purple-300 uppercase font-semibold">Atelier AI</span>
+          </div>
+          <p class="text-[11px] text-purple-300/70">Taste Calibration &amp; Curatorial Companion</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-1">
+        <button id="deckoviz-chat-clear" title="Reset Session" class="p-1.5 rounded-lg text-purple-300/60 hover:text-purple-100 hover:bg-white/5 transition-colors">
+          <span class="material-symbols-outlined text-[17px]">restart_alt</span>
+        </button>
+        <button id="deckoviz-chat-close" class="p-1.5 rounded-lg text-purple-300/60 hover:text-purple-100 hover:bg-white/5 transition-colors">
+          <span class="material-symbols-outlined text-[18px]">close</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Quick Mode Selector Pills -->
+    <div class="px-4 py-2 bg-purple-950/30 border-b border-purple-500/10 flex gap-1.5 overflow-x-auto text-[11px] flex-shrink-0 no-scrollbar">
+      <button class="deckoviz-mode-chip whitespace-nowrap px-2.5 py-1 rounded-full bg-purple-600/30 text-purple-200 border border-purple-500/30 hover:bg-purple-600/50 active:scale-95 transition-all font-medium" data-prompt="I want to take the Deckoviz Style Calibration Quiz.">
+        🎨 Style Quiz
+      </button>
+      <button class="deckoviz-mode-chip whitespace-nowrap px-2.5 py-1 rounded-full bg-purple-600/30 text-purple-200 border border-purple-500/30 hover:bg-purple-600/50 active:scale-95 transition-all font-medium" data-prompt="Tell me about the Deckoviz Archival Atelier experiences and workshops.">
+        🏛️ Atelier Workshop
+      </button>
+      <button class="deckoviz-mode-chip whitespace-nowrap px-2.5 py-1 rounded-full bg-purple-600/30 text-purple-200 border border-purple-500/30 hover:bg-purple-600/50 active:scale-95 transition-all font-medium" data-prompt="How does the Illuminated Story Studio work?">
+        📜 Story Studio
+      </button>
+      <button class="deckoviz-mode-chip whitespace-nowrap px-2.5 py-1 rounded-full bg-purple-600/30 text-purple-200 border border-purple-500/30 hover:bg-purple-600/50 active:scale-95 transition-all font-medium" data-prompt="What is my signature aesthetic based on chiaroscuro and lithography?">
+        ✨ Taste Signals
+      </button>
+    </div>
+
+    <!-- Message History Feed -->
+    <div id="deckoviz-chat-messages" class="flex-1 p-4 overflow-y-auto space-y-3.5 text-sm select-text">
+      <!-- Initial Greeting Message -->
+      <div class="flex items-start gap-2.5">
+        <img src="/logo.jpeg" alt="Vizzy" class="w-6 h-6 rounded-full object-cover mt-0.5 border border-purple-400/40 shrink-0" />
+        <div class="p-3.5 rounded-2xl rounded-tl-sm bg-[#1c192e] border border-purple-500/20 text-purple-100/90 leading-relaxed max-w-[85%] shadow-sm">
+          Welcome to the Deckoviz Atelier! I am Vizzy, your resident aesthetics and style curator. You can take our <strong class="text-purple-300">Style Calibration Quiz</strong>, explore <strong class="text-purple-300">Archival Atelier workshops</strong>, or refine your taste signals right here in chat. How may I guide your eye today?
+        </div>
+      </div>
+    </div>
+
+    <!-- Thinking indicator -->
+    <div id="deckoviz-chat-typing" class="hidden px-4 py-2 flex items-center gap-2 text-xs text-purple-300/70">
+      <div class="flex gap-1 items-center">
+        <span class="w-1.5 h-1.5 rounded-full bg-purple-400 animate-bounce"></span>
+        <span class="w-1.5 h-1.5 rounded-full bg-purple-400 animate-bounce" style="animation-delay: 150ms"></span>
+        <span class="w-1.5 h-1.5 rounded-full bg-purple-400 animate-bounce" style="animation-delay: 300ms"></span>
+      </div>
+      <span>Vizzy is meditating on your taste...</span>
+    </div>
+
+    <!-- Input Footer -->
+    <div class="p-3 bg-[#0d0c15] border-t border-purple-500/20 flex-shrink-0">
+      <form id="deckoviz-chat-form" class="flex items-center gap-2 bg-[#171526] border border-purple-500/30 rounded-xl px-3 py-1.5 focus-within:border-purple-400 focus-within:ring-1 focus-within:ring-purple-400/30 transition-all">
+        <input id="deckoviz-chat-input" type="text" placeholder="Message Vizzy or take a quiz..." autocomplete="off" class="flex-1 bg-transparent border-none outline-none text-xs sm:text-sm text-purple-100 placeholder-purple-400/40 py-1" />
+        <button type="submit" class="p-1.5 rounded-lg bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:from-purple-500 hover:to-indigo-500 active:scale-95 transition-all cursor-pointer shadow-md shadow-purple-600/30">
+          <span class="material-symbols-outlined text-[17px] leading-none">arrow_upward</span>
+        </button>
+      </form>
+      <div class="flex items-center justify-between text-[10px] text-purple-400/40 px-1 mt-1.5">
+        <span>Connected to Deckoviz AI Engine</span>
+        <span>Vol. IV • Atelier Folio</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  const root = document.getElementById('deckoviz-chatbot-root');
+  if (!root) return;
+  const toggleBtn = document.getElementById('deckoviz-chat-toggle');
+  const chatWindow = document.getElementById('deckoviz-chat-window');
+  const closeBtn = document.getElementById('deckoviz-chat-close');
+  const clearBtn = document.getElementById('deckoviz-chat-clear');
+  const messagesDiv = document.getElementById('deckoviz-chat-messages');
+  const typingDiv = document.getElementById('deckoviz-chat-typing');
+  const form = document.getElementById('deckoviz-chat-form');
+  const input = document.getElementById('deckoviz-chat-input');
+  const modeChips = document.querySelectorAll('.deckoviz-mode-chip');
+
+  let history = [];
+  let sessionId = null;
+  let activeQuizId = null;
+
+  // Toggle Window
+  toggleBtn.addEventListener('click', () => {
+    chatWindow.classList.toggle('hidden');
+    if (!chatWindow.classList.contains('hidden')) {
+      input.focus();
+    }
+  });
+
+  closeBtn.addEventListener('click', () => {
+    chatWindow.classList.add('hidden');
+  });
+
+  clearBtn.addEventListener('click', () => {
+    history = [];
+    sessionId = null;
+    activeQuizId = null;
+    messagesDiv.innerHTML = `
+      <div class="flex items-start gap-2.5">
+        <img src="/logo.jpeg" alt="Vizzy" class="w-6 h-6 rounded-full object-cover mt-0.5 border border-purple-400/40 shrink-0" />
+        <div class="p-3.5 rounded-2xl rounded-tl-sm bg-[#1c192e] border border-purple-500/20 text-purple-100/90 leading-relaxed max-w-[85%] shadow-sm">
+          Session reset. Welcome back to the Deckoviz Atelier! How may I assist your style calibration or explore experiences with you?
+        </div>
+      </div>
+    `;
+  });
+
+  // Mode Chips
+  modeChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      const prompt = chip.getAttribute('data-prompt');
+      if (prompt) {
+        input.value = prompt;
+        sendMessage(prompt);
+      }
+    });
+  });
+
+  function appendMessage(sender, text, options = null) {
+    const wrap = document.createElement('div');
+    wrap.className = sender === 'user' ? 'flex justify-end' : 'flex items-start gap-2.5';
+
+    if (sender === 'user') {
+      wrap.innerHTML = `
+        <div class="p-3 rounded-2xl rounded-tr-sm bg-gradient-to-r from-purple-600 to-indigo-600 text-white max-w-[85%] shadow-md leading-relaxed text-sm">
+          ${escapeHtml(text)}
+        </div>
+      `;
+    } else {
+      let optionButtonsHtml = '';
+      if (options && Array.isArray(options) && options.length > 0) {
+        optionButtonsHtml = `<div class="mt-2.5 pt-2 border-t border-purple-500/20 flex flex-col gap-1.5">
+          ${options.map(opt => `<button class="deckoviz-choice-pill text-left px-3 py-1.5 rounded-lg bg-purple-900/40 border border-purple-500/30 text-purple-200 text-xs hover:bg-purple-600/50 hover:border-purple-400 active:scale-98 transition-all font-sans">${escapeHtml(opt)}</button>`).join('')}
+        </div>`;
+      }
+      wrap.innerHTML = `
+        <img src="/logo.jpeg" alt="Vizzy" class="w-6 h-6 rounded-full object-cover mt-0.5 border border-purple-400/40 shrink-0" />
+        <div class="p-3.5 rounded-2xl rounded-tl-sm bg-[#1c192e] border border-purple-500/20 text-purple-100/90 leading-relaxed max-w-[85%] shadow-sm">
+          <div>${formatMarkdown(text)}</div>
+          ${optionButtonsHtml}
+        </div>
+      `;
+    }
+
+    messagesDiv.appendChild(wrap);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+
+    // Attach choice pill clicks
+    wrap.querySelectorAll('.deckoviz-choice-pill').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const choice = btn.textContent.trim();
+        sendMessage(choice);
+      });
+    });
+  }
+
+  function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
+  function formatMarkdown(text) {
+    return text
+      .replace(/\*\*(.*?)\*\*/g, '<strong class="text-purple-300 font-semibold">$1</strong>')
+      .replace(/\*(.*?)\*/g, '<em class="text-purple-200 italic">$1</em>')
+      .replace(/\n/g, '<br/>');
+  }
+
+  async function sendMessage(userText) {
+    if (!userText || !userText.trim()) return;
+    const cleanText = userText.trim();
+    input.value = '';
+
+    appendMessage('user', cleanText);
+    history.push({ role: 'user', content: cleanText });
+    typingDiv.classList.remove('hidden');
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+
+    try {
+      // 1. If user asks for quiz explicitly, start session
+      if (cleanText.toLowerCase().includes('quiz') && !sessionId) {
+        try {
+          const res = await fetch('/session/start', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ quiz_id: 46, mode: 'solo' })
+          });
+          if (res.ok) {
+            const data = await res.json();
+            sessionId = data.session_id;
+            activeQuizId = 46;
+            typingDiv.classList.add('hidden');
+            appendMessage('bot', data.greeting, [
+              'Warm afternoon light on raw wood floorboards',
+              'A bold concrete arch with clean geometry',
+              'A dreamlike surreal painting with fluid shapes',
+              'A delicate woodblock print of ocean waves'
+            ]);
+            history.push({ role: 'assistant', content: data.greeting });
+            return;
+          }
+        } catch (e) {
+          console.warn('Session start fallback:', e);
+        }
+      }
+
+      // 2. Active quiz session message
+      if (sessionId) {
+        try {
+          const res = await fetch('/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ session_id: sessionId, message: cleanText })
+          });
+          if (res.ok) {
+            const data = await res.json();
+            typingDiv.classList.add('hidden');
+            appendMessage('bot', data.response);
+            history.push({ role: 'assistant', content: data.response });
+            return;
+          }
+        } catch (e) {
+          console.warn('Chat session call fallback:', e);
+        }
+      }
+
+      // 3. General Atelier / Lumi / Vizzy Chat Endpoint
+      const res = await fetch('/chat/general', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: cleanText,
+          history: history.slice(-8).map(m => ({ sender: m.role === 'user' ? 'user' : 'assistant', text: m.content }))
+        })
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        const reply = data.response || "I am reflecting on your aesthetic instincts.";
+        typingDiv.classList.add('hidden');
+        appendMessage('bot', reply);
+        history.push({ role: 'assistant', content: reply });
+      } else {
+        throw new Error('Endpoint returned ' + res.status);
+      }
+    } catch (err) {
+      console.warn('Chat request failed, using intelligent client fallback:', err);
+      typingDiv.classList.add('hidden');
+      
+      // Intelligent in-browser fallback
+      const reply = generateLocalReply(cleanText);
+      appendMessage('bot', reply);
+      history.push({ role: 'assistant', content: reply });
+    }
+  }
+
+  function generateLocalReply(text) {
+    const t = text.toLowerCase();
+    if (t.includes('woodcut') || t.includes('soot') || t.includes('shadow') || t.includes('noir')) {
+      return "An exquisite leaning toward Victorian Woodcut Noir! You appreciate deep soot blacks, copperplate crosshatching, and dramatic chiaroscuro. Your taste signals align strongly with Plate No. IV.";
+    }
+    if (t.includes('impression') || t.includes('light') || t.includes('sun')) {
+      return "A sublime instinct for Luminous Impressionism. You notice shifting light and atmospheric stillness over rigid lines. The Claude 3.7 dialectic matrix records a +0.82 affinity for warm plein-air palettes.";
+    }
+    if (t.includes('studio') || t.includes('story') || t.includes('manuscript')) {
+      return "Our Illuminated Story Studio & Manuscript Forge allows you to sequence multi-panel storyboards with 24fps celluloid grain. Would you like to bind your current style to the studio?";
+    }
+    if (t.includes('atelier') || t.includes('workshop') || t.includes('experience')) {
+      return "The Deckoviz Archival Atelier in San Francisco hosts hands-on workshops in woodcut relief printing, digital linotype, and aesthetic calibration. Passes are available under Atelier Experiences.";
+    }
+    return "A thoughtful observation. Your aesthetic choices reveal a discerning eye for material honesty and calm architectural rhythm. Would you like to explore another plate calibration or view your Curated Art Folio?";
+  }
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    sendMessage(input.value);
+  });
+})();
+</script>
+<!-- ================= END DECKOVIZ CHATBOT WIDGET ================= -->
+
+</body></html>

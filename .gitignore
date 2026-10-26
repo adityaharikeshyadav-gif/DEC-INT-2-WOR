@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.pytest_cache/
+.venv/
+env/
+
+# Large archives
+*.zip
+
+# Node
+node_modules/
+dist/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

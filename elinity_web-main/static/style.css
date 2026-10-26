@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Figtree:wght@400;500;600&display=swap");
+:root { --navy:#0B2545; --ink:#1B3552; --slate:#5C7085; --ice:#BFEAF0; --teal:#2BA9B8; --mist:#F4FAFB; --line:#D6E8EC; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--mist); color:var(--ink); font:16px/1.55 "Figtree",system-ui,sans-serif; }
+main { max-width:1040px; margin:0 auto; padding:32px 20px 56px; }
+h1,h2,h3,.sheet h2 { font-family:"Fraunces",Georgia,serif; color:var(--navy); font-weight:400; line-height:1.15; }
+h1 { font-size:clamp(32px,6vw,54px); margin:10px 0 12px; max-width:16ch; }
+.hero p { max-width:50ch; color:var(--slate); font-size:18px; }
+button { font:inherit; cursor:pointer; }
+:focus-visible { outline:2px solid var(--teal); outline-offset:3px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(235px,1fr)); gap:14px; margin-top:26px; }
+.card { text-align:left; border:1px solid var(--line); background:#fff; color:var(--ink); padding:20px; display:flex; flex-direction:column; gap:8px; transition:transform .2s, border-color .2s; }
+.c0 { border-radius:28px 28px 28px 8px; } .c1 { border-radius:8px 28px 28px 28px; } .c2 { border-radius:28px 8px 28px 28px; } .c3 { border-radius:28px 28px 8px 28px; }
+.card:hover { transform:translateY(-3px); border-color:var(--teal); }
+.card b { font-family:"Fraunces",Georgia,serif; font-weight:600; font-size:19px; color:var(--navy); }
+.card .emo { font-size:30px; } .card span:last-of-type { color:var(--slate); font-size:15px; }
+.card em { font-style:normal; font-size:13px; color:var(--teal); font-weight:600; }
+.known { background:var(--ice); border-radius:24px; padding:16px 20px; margin-top:22px; } .known p { margin:8px 0 0; font-size:14px; color:var(--navy); }
+.tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+.tags span { background:#fff; border:1px solid var(--line); border-radius:999px; padding:5px 13px; font-size:14px; }
+.stage { max-width:640px; margin:0 auto; }
+.link { background:none; border:0; color:var(--slate); text-decoration:underline; padding:8px 0; }
+.meter { height:10px; border-radius:99px; background:var(--ice); margin:10px 0 28px; overflow:hidden; } .meter i { display:block; height:100%; background:var(--navy); border-radius:99px; transition:width .5s; }
+.quip { color:var(--teal); font-weight:600; margin:0 0 6px; min-height:1.5em; }
+.stage h2 { font-size:clamp(26px,4.5vw,36px); margin:0 0 22px; }
+.opts { display:grid; gap:12px; }
+.opt { text-align:left; background:#fff; border:1px solid var(--line); border-radius:22px; padding:16px 20px; color:var(--ink); font-size:17px; transition:background .15s, color .15s, border-color .15s; }
+.opt:hover { background:var(--navy); color:#fff; border-color:var(--navy); }
+.btn { background:var(--navy); color:#fff; border:0; border-radius:999px; padding:12px 24px; font-weight:600; }
+.think { text-align:center; margin-top:22vh; color:var(--slate); font-size:18px; }
+.think i { display:inline-block; width:7px; height:7px; margin-left:6px; border-radius:50%; background:var(--teal); animation:b 1s infinite; } .think i:nth-child(3){animation-delay:.15s} .think i:nth-child(4){animation-delay:.3s}
+@keyframes b { 0%,100%{opacity:.25} 50%{opacity:1} }
+.result { max-width:700px; } .mat { background:var(--ice); border-radius:38px; padding:16px; } .sheet { background:#fff; border-radius:26px; padding:34px 30px; }
+.sheet h2 { font-size:clamp(28px,5vw,40px); margin:0 0 6px; } .tag { color:var(--teal); font-weight:600; margin:0 0 14px; }
+.sheet h3 { font-size:22px; margin:26px 0 8px; } .sheet ul { padding-left:20px; margin:0; } .sheet li { margin-bottom:8px; }
+.sw { display:flex; gap:10px; margin-top:18px; } .sw i { width:46px; height:46px; border-radius:50% 50% 50% 12px; box-shadow:inset 0 0 0 1px rgba(11,37,69,.12); }
+.actions { display:flex; gap:18px; align-items:center; margin:20px 0; }
+#lead { margin-top:22px; } #lead label { font-family:"Fraunces",Georgia,serif; font-size:20px; color:var(--navy); } #lead div { display:flex; gap:10px; margin-top:10px; flex-wrap:wrap; }
+#lead input { flex:1; min-width:200px; border:1px solid var(--line); border-radius:999px; padding:12px 18px; font:inherit; }
+@media (prefers-reduced-motion:reduce) { .card, .meter i, .think i { transition:none; animation:none; } }
