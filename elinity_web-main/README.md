@@ -551,3 +551,14 @@ The frontend derives WebSocket URL from `VITE_API_URL`.
 ### Game says display name belongs to another participant
 
 The same display name is already connected to that game session. Use a different name or restart the session/backend during local testing.
+
+## Deckoviz Taste Quizzes & Atelier Chatbot Integration
+
+Deckoviz features are delivered conversationally through the website chatbot pipeline:
+
+- **Taste Quizzes (#46–49)**: Added Style Calibration, Folio Taste Matrix, Illuminated Story Studio, and Archival Gazette to the catalog with conversational evaluation through Lumi.
+- **Vizzy Curator Persona**: Added `vizzy` to `/conversations/personas` for 1-on-1 aesthetic and chiaroscuro guidance.
+- **Curated Atelier Experiences**: Added Archival Atelier, Illuminated Story Studio, and Art Folio Salon to the `/experiences` catalog.
+- **Purple Brand Theme & Logo**: Integrated the royal purple palette and `/logo.jpeg` branding across the UI and floating chatbot widget.
+- **Verification**: Run `python -m pytest backend/test_deckoviz_integration.py` to verify all routes and endpoints.
+
